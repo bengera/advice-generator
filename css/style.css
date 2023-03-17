@@ -1,0 +1,61 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-family: "Manrope", sans-serif;
+}
+
+body {
+  background-color: hsl(218, 23%, 16%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  background-color: hsl(217, 19%, 24%);
+  border-radius: 15px;
+  padding: 2rem;
+  padding-bottom: 5rem;
+  max-width: 343px;
+}
+.box__number {
+  text-transform: uppercase;
+  font-size: 11px;
+  color: hsl(150, 100%, 66%);
+  letter-spacing: 3.46px;
+}
+.box__quote {
+  color: hsl(193, 38%, 86%);
+  font-size: 24px;
+  line-height: 33px;
+  letter-spacing: 0.26px;
+  max-width: 295px;
+  text-align: center;
+}
+.box__dice {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background-color: hsl(150, 100%, 66%);
+  bottom: -30px;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=style.css.map */
