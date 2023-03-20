@@ -30,6 +30,17 @@ body {
   padding: 2rem;
   padding-bottom: 5rem;
   max-width: 343px;
+  transition: all 0.5s ease-in-out;
+}
+@media only screen and (min-width: 37.5em) {
+  .box {
+    max-width: 850px;
+  }
+}
+@media only screen and (max-width: 370px) {
+  .box {
+    max-width: 240px;
+  }
 }
 .box__number {
   text-transform: uppercase;
@@ -46,6 +57,24 @@ body {
   text-align: center;
   min-height: 100px;
 }
+@media only screen and (min-width: 37.5em) {
+  .box__quote {
+    max-width: 370px;
+  }
+}
+@media only screen and (min-width: 37.5em) {
+  .box__mobile-line {
+    display: none;
+  }
+}
+.box__desktop-line {
+  display: none;
+}
+@media only screen and (min-width: 37.5em) {
+  .box__desktop-line {
+    display: block;
+  }
+}
 .box__dice {
   position: absolute;
   display: flex;
@@ -57,6 +86,24 @@ body {
   background-color: hsl(150, 100%, 66%);
   bottom: -30px;
   cursor: pointer;
+}
+@media only screen and (min-width: 37.5em) {
+  .box__dice:hover {
+    -webkit-box-shadow: 0px 0px 65px 1px rgba(82, 255, 169, 0.91);
+    -moz-box-shadow: 0px 0px 65px 1px rgba(82, 255, 169, 0.91);
+    box-shadow: 0px 0px 65px 1px rgba(82, 255, 169, 0.91);
+  }
+}
+
+@media (min-width: 840px) {
+  .box {
+    width: 80%;
+  }
+}
+@media (max-width: 340px) {
+  .box {
+    width: 95%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

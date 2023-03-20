@@ -10,6 +10,6 @@ function getRandomQuote() {
     .then(data => {
         console.log(data);
         result.innerHTML = `${data.slip.advice}`
-        index.innerHTML = `advice# ${data.slip.id}`
+        index.innerHTML = `advice #${data.slip.id}`
     })
 };
